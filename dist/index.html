@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Supplier Delivery Assurance</title>
+  <meta name="description" content="A 12-week workspace for supplier commitments, delivery evidence and buyer decisions.">
+  <meta name="theme-color" content="#A01441">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workspace</a>
+  <aside class="sidebar">
+    <a class="brand" href="#worklist" aria-label="msg — Supplier Delivery Assurance"><img class="brand-logo" src="msg-logo.svg" width="112" height="35" alt="msg"><span class="brand-sub">SUPPLIER DELIVERY</span></a>
+    <div class="workspace-label">WORKSPACE <span>12W</span></div>
+    <nav id="navigation" aria-label="Main navigation"></nav>
+    <div class="sidebar-bottom"><div class="lab">Supply Chain Lab</div><p>Know your commitments.<br>Own the next action.</p><button class="sidebar-demo" data-action="about">Demonstration workspace <span>↗</span></button></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><span class="breadcrumb">Procurement <span>/</span> <strong id="crumb">Delivery assurance</strong></span><div class="top-meta"><span class="demo-tag">SYNTHETIC DATA</span><span id="snapshot"></span><span class="avatar" title="Demo buyer: Anna Weber">AW</span></div></header>
+    <main id="main" tabindex="-1"><div class="loading">Loading supplier commitments…</div></main>
+    <footer class="footer"><span id="runtime">Demonstration workspace</span><span>Read-only source data · Human-reviewed commitments</span></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
